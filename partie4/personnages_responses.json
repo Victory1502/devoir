@@ -1,0 +1,92 @@
+[
+  {
+    "nom": "Yuji Itadori",
+    "score": 12,
+    "score_double": 24,
+    "niveau": "débutant"
+  },
+  {
+    "nom": "Light Yagami",
+    "score": 4,
+    "score_double": 8,
+    "niveau": "débutant"
+  },
+  {
+    "nom": "Orihime Inoue",
+    "score": 42,
+    "score_double": 84,
+    "niveau": "débutant"
+  },
+  {
+    "nom": "Misa Amane",
+    "score": 45,
+    "score_double": 90,
+    "niveau": "débutant"
+  },
+  {
+    "nom": "Edward Elric",
+    "score": 11,
+    "score_double": 22,
+    "niveau": "débutant"
+  },
+  {
+    "nom": "Killua Zoldyck",
+    "score": 46,
+    "score_double": 92,
+    "niveau": "débutant"
+  },
+  {
+    "nom": "Uryu Ishida",
+    "score": 62,
+    "score_double": 124,
+    "niveau": "intermédiaire"
+  },
+  {
+    "nom": "Saitama",
+    "score": 53,
+    "score_double": 106,
+    "niveau": "intermédiaire"
+  },
+  {
+    "nom": "Tatsumaki",
+    "score": 54,
+    "score_double": 108,
+    "niveau": "intermédiaire"
+  },
+  {
+    "nom": "Taiju Oki",
+    "score": 88,
+    "score_double": 176,
+    "niveau": "expert"
+  },
+  {
+    "nom": "Ryuk",
+    "score": 79,
+    "score_double": 158,
+    "niveau": "expert"
+  },
+  {
+    "nom": "Edward Wong",
+    "score": 84,
+    "score_double": 168,
+    "niveau": "expert"
+  },
+  {
+    "nom": "Pikachu",
+    "score": 76,
+    "score_double": 152,
+    "niveau": "expert"
+  },
+  {
+    "nom": "Nezuko Kamado",
+    "score": 44,
+    "score_double": 88,
+    "niveau": "débutant"
+  },
+  {
+    "nom": "Megumi Fushiguro",
+    "score": 6,
+    "score_double": 12,
+    "niveau": "débutant"
+  }
+]

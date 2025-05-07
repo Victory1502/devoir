@@ -1,0 +1,77 @@
+[
+  {
+    "nom": "Yuji Itadori",
+    "score": 12,
+    "score_double": 24
+  },
+  {
+    "nom": "Light Yagami",
+    "score": 4,
+    "score_double": 8
+  },
+  {
+    "nom": "Orihime Inoue",
+    "score": 42,
+    "score_double": 84
+  },
+  {
+    "nom": "Misa Amane",
+    "score": 45,
+    "score_double": 90
+  },
+  {
+    "nom": "Edward Elric",
+    "score": 11,
+    "score_double": 22
+  },
+  {
+    "nom": "Killua Zoldyck",
+    "score": 46,
+    "score_double": 92
+  },
+  {
+    "nom": "Uryu Ishida",
+    "score": 62,
+    "score_double": 124
+  },
+  {
+    "nom": "Saitama",
+    "score": 53,
+    "score_double": 106
+  },
+  {
+    "nom": "Tatsumaki",
+    "score": 54,
+    "score_double": 108
+  },
+  {
+    "nom": "Taiju Oki",
+    "score": 88,
+    "score_double": 176
+  },
+  {
+    "nom": "Ryuk",
+    "score": 79,
+    "score_double": 158
+  },
+  {
+    "nom": "Edward Wong",
+    "score": 84,
+    "score_double": 168
+  },
+  {
+    "nom": "Pikachu",
+    "score": 76,
+    "score_double": 152
+  },
+  {
+    "nom": "Nezuko Kamado",
+    "score": 44,
+    "score_double": 88
+  },
+  {
+    "nom": "Megumi Fushiguro",
+    "score": 6,
+    "score_double": 12
+  }
+]
