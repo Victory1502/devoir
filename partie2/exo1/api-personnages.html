@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Personnages</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #c62828;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 8px 15px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API Personnages</h1>
+        
+        <div class="input-group">
+            <input type="text" id="tokenInput" value="mon_super_token_secret" placeholder="Entrez votre token d'API">
+        </div>
+        
+        <button id="loadButton">Charger les personnages</button>
+        
+        <div id="result">
+            <!-- Les résultats seront affichés ici -->
+            <p style="text-align: center; color: #7f8c8d;">Cliquez sur le bouton pour charger les personnages</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Exercice API Personnages - Développé avec FastAPI et JavaScript</p>
+    </div>
+
+    <script>
+        // Configuration de l'API
+        const API_URL = 'http://localhost:8000/personnages';
+        
+        // Fonction pour récupérer les personnages
+        async function getPersonnages() {
+            try {
+                // Récupération du token depuis l'input
+                const TOKEN = document.getElementById('tokenInput').value;
+                
+                // Élément où afficher les résultats ou les erreurs
+                const resultElement = document.getElementById('result');
+                resultElement.innerHTML = '<p style="text-align: center;">Chargement...</p>';
+                
+                // Configuration de la requête avec le token d'authentification
+                const options = {
+                    method: 'GET',
+                    headers: {
+                        'token': TOKEN
+                    }
+                };
+                
+                // Envoi de la requête
+                const response = await fetch(API_URL, options);
+                
+                // Vérification du statut de la réponse
+                if (!response.ok) {
+                    // Si le statut est 401, c'est une erreur d'authentification
+                    if (response.status === 401) {
+                        throw new Error('Erreur d\'authentification: Token invalide ou manquant');
+                    }
+                    // Pour les autres erreurs
+                    throw new Error(`Erreur HTTP: ${response.status}`);
+                }
+                
+                // Conversion de la réponse en JSON
+                const data = await response.json();
+                
+                // Affichage du résultat
+                resultElement.innerHTML = '';
+                
+                // Création d'un titre pour indiquer le succès
+                const title = document.createElement('h2');
+                title.textContent = `${data.length} personnages récupérés`;
+                title.style.textAlign = 'center';
+                title.style.color = '#27ae60';
+                resultElement.appendChild(title);
+                
+                // Parcours et affichage de chaque personnage
+                data.forEach(personnage => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    
+                    // Création du contenu HTML pour chaque personnage
+                    card.innerHTML = `
+                        <h3>${personnage.nom}</h3>
+                        <p><strong>Profession:</strong> ${personnage.profession}</p>
+                        <p><strong>Âge:</strong> ${personnage.age} ans</p>
+                        <p><strong>Pouvoir:</strong> ${personnage.pouvoir || 'Aucun'}</p>
+                    `;
+                    
+                    resultElement.appendChild(card);
+                });
+                
+            } catch (error) {
+                // Gestion des erreurs
+                const resultElement = document.getElementById('result');
+                resultElement.innerHTML = `
+                    <div class="error">
+                        <h3>Erreur</h3>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+                console.error('Erreur lors de la récupération des personnages:', error);
+            }
+        }
+
+        // Exécution de la fonction lors du clic sur le bouton
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('loadButton');
+            button.addEventListener('click', getPersonnages);
+        });
+    </script>
+</body>
+</html>

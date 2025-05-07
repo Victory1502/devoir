@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Krewe Da Cha Chas",
+    "city": "Ponchatoula",
+    "state": "LA",
+    "avis": "excellent",
+    "score": 83,
+    "category": "E12"
+  },
+  {
+    "name": "Cha Chas Animal Rescue",
+    "city": "Piscataway",
+    "state": "NJ",
+    "avis": "moyen",
+    "score": 33,
+    "category": "D99"
+  },
+  {
+    "name": "Tr Uw Char Chas Schattner",
+    "city": "Dallas",
+    "state": "TX",
+    "avis": "bon",
+    "score": 62,
+    "category": null
+  },
+  {
+    "name": "Chai And Chit Chat Non Profit Corp",
+    "city": "Trenton",
+    "state": "TX",
+    "avis": "faible",
+    "score": 16,
+    "category": null
+  },
+  {
+    "name": "Helping Mommies And Cha Chas",
+    "city": "Laplata",
+    "state": "MD",
+    "avis": "moyen",
+    "score": 34,
+    "category": "P58"
+  },
+  {
+    "name": "So Chat Tap2 Chat Inc",
+    "city": "Cortlandt Mnr",
+    "state": "NY",
+    "avis": "moyen",
+    "score": 43,
+    "category": "O50"
+  },
+  {
+    "name": "Chat",
+    "city": "Camden",
+    "state": "AR",
+    "avis": "moyen",
+    "score": 46,
+    "category": "E70"
+  },
+  {
+    "name": "Chat Advertising",
+    "city": "Rembert",
+    "state": "SC",
+    "avis": "moyen",
+    "score": 39,
+    "category": "B30"
+  },
+  {
+    "name": "Chica Chat",
+    "city": "El Paso",
+    "state": "TX",
+    "avis": "bon",
+    "score": 62,
+    "category": "A01"
+  },
+  {
+    "name": "Chip Chat",
+    "city": "Cupertino",
+    "state": "CA",
+    "avis": "faible",
+    "score": 21,
+    "category": "U03"
+  },
+  {
+    "name": "Fmd Chat",
+    "city": "Charlotte",
+    "state": "NC",
+    "avis": "moyen",
+    "score": 33,
+    "category": "G43"
+  },
+  {
+    "name": "Franklin Chat",
+    "city": "Massillon",
+    "state": "OH",
+    "avis": "bon",
+    "score": 63,
+    "category": "B94"
+  },
+  {
+    "name": "Islam Chat",
+    "city": "Edison",
+    "state": "NJ",
+    "avis": "excellent",
+    "score": 84,
+    "category": "X40"
+  },
+  {
+    "name": "Tutor Chat",
+    "city": "Carlsbad",
+    "state": "CA",
+    "avis": "excellent",
+    "score": 87,
+    "category": "B90"
+  },
+  {
+    "name": "Responder Chat",
+    "city": "Ofallon",
+    "state": "MO",
+    "avis": "faible",
+    "score": 17,
+    "category": "W99"
+  },
+  {
+    "name": "Le Chat Noir",
+    "city": "Augusta",
+    "state": "GA",
+    "avis": "moyen",
+    "score": 33,
+    "category": "A65"
+  },
+  {
+    "name": "Vets Chat Inc",
+    "city": "Fort Lee",
+    "state": "NJ",
+    "avis": "bon",
+    "score": 61,
+    "category": "W30"
+  },
+  {
+    "name": "Chat N Chew",
+    "city": "Southlake",
+    "state": "TX",
+    "avis": "excellent",
+    "score": 78,
+    "category": "P40"
+  },
+  {
+    "name": "Chat Southwest Montana",
+    "city": "Bozeman",
+    "state": "MT",
+    "avis": "faible",
+    "score": 9,
+    "category": "B01"
+  },
+  {
+    "name": "Chat Travelers Inc",
+    "city": "Deerfield Bch",
+    "state": "FL",
+    "avis": "moyen",
+    "score": 32,
+    "category": "T50"
+  },
+  {
+    "name": "Chit Chat Charity",
+    "city": "Wynnewood",
+    "state": "PA",
+    "avis": "moyen",
+    "score": 29,
+    "category": "T12"
+  },
+  {
+    "name": "Dude Chat Corporation",
+    "city": "Anderson",
+    "state": "SC",
+    "avis": "faible",
+    "score": 22,
+    "category": "Y40"
+  },
+  {
+    "name": "Pink Ribbon Chat",
+    "city": "Silver Spring",
+    "state": "MD",
+    "avis": "excellent",
+    "score": 89,
+    "category": "E70"
+  },
+  {
+    "name": "Teen Chat Inc",
+    "city": "Lafayette",
+    "state": "LA",
+    "avis": "bon",
+    "score": 64,
+    "category": "O55"
+  },
+  {
+    "name": "Classy Chick Chat",
+    "city": "Southfield",
+    "state": "MI",
+    "avis": "faible",
+    "score": 18,
+    "category": "O55"
+  },
+  {
+    "name": "Petaluma Urban Chat",
+    "city": "Petaluma",
+    "state": "CA",
+    "avis": "moyen",
+    "score": 27,
+    "category": "W24"
+  },
+  {
+    "name": "Fireside Chat Support Network",
+    "city": "Dripping Spgs",
+    "state": "TX",
+    "avis": "excellent",
+    "score": 85,
+    "category": "W30"
+  },
+  {
+    "name": "Medi Guide Chat Inc",
+    "city": "Novi",
+    "state": "MI",
+    "avis": "faible",
+    "score": 15,
+    "category": "F99"
+  },
+  {
+    "name": "Chay Environmental",
+    "city": "Kelso",
+    "state": "WA",
+    "avis": "bon",
+    "score": 50,
+    "category": "C50"
+  },
+  {
+    "name": "Chac",
+    "city": "Mountain View",
+    "state": "CA",
+    "avis": "moyen",
+    "score": 44,
+    "category": "F20Z"
+  },
+  {
+    "name": "Chats",
+    "city": "Honolulu",
+    "state": "HI",
+    "avis": "excellent",
+    "score": 92,
+    "category": "F60"
+  },
+  {
+    "name": "Le Chien Chat Rescue",
+    "city": "New Orleans",
+    "state": "LA",
+    "avis": "faible",
+    "score": 1,
+    "category": "D20"
+  },
+  {
+    "name": "Chat And Chew Inc",
+    "city": "Kenna",
+    "state": "WV",
+    "avis": "excellent",
+    "score": 84,
+    "category": "P60"
+  },
+  {
+    "name": "Chat And Chew Ministry",
+    "city": "Bowie",
+    "state": "MD",
+    "avis": "bon",
+    "score": 53,
+    "category": "X20"
+  },
+  {
+    "name": "Chat Ease International Foundationinc",
+    "city": "Irvine",
+    "state": "CA",
+    "avis": "bon",
+    "score": 67,
+    "category": "B90"
+  },
+  {
+    "name": "Learning Chat & More Inc",
+    "city": "Fruitland Pk",
+    "state": "FL",
+    "avis": "moyen",
+    "score": 32,
+    "category": "O50"
+  },
+  {
+    "name": "Chic Chat Girl Inc",
+    "city": "Hoschton",
+    "state": "GA",
+    "avis": "excellent",
+    "score": 80,
+    "category": "O50"
+  },
+  {
+    "name": "Operation Chit Chat Inc",
+    "city": "East Point",
+    "state": "GA",
+    "avis": "excellent",
+    "score": 97,
+    "category": "O99"
+  },
+  {
+    "name": "Girl Chat Bible Talk",
+    "city": "Norwalk",
+    "state": "CA",
+    "avis": "bon",
+    "score": 68,
+    "category": "P20"
+  },
+  {
+    "name": "Happy Birthday Cha Cha Cha",
+    "city": "Pittsford",
+    "state": "NY",
+    "avis": "excellent",
+    "score": 87,
+    "category": "W99"
+  },
+  {
+    "name": "Cha Cha Explorers",
+    "city": "Austin",
+    "state": "TX",
+    "avis": "faible",
+    "score": 19,
+    "category": "O50"
+  },
+  {
+    "name": "Le Chat Noir Theatrics Inc",
+    "city": "New Orleans",
+    "state": "LA",
+    "avis": "excellent",
+    "score": 77,
+    "category": "A20"
+  },
+  {
+    "name": "Bayit Cham",
+    "city": "Lakewood",
+    "state": "NJ",
+    "avis": "moyen",
+    "score": 46,
+    "category": "T23"
+  },
+  {
+    "name": "Heart Chan",
+    "city": "Milpitas",
+    "state": "CA",
+    "avis": "moyen",
+    "score": 32,
+    "category": "X50"
+  },
+  {
+    "name": "Chas Foundation",
+    "city": "Norfolk",
+    "state": "VA",
+    "avis": "moyen",
+    "score": 31,
+    "category": "F80"
+  },
+  {
+    "name": "Mission Chad",
+    "city": "Monroe",
+    "state": "NC",
+    "avis": "excellent",
+    "score": 88,
+    "category": "Q30"
+  },
+  {
+    "name": "Chart Exchange",
+    "city": "Claymont",
+    "state": "DE",
+    "avis": "moyen",
+    "score": 28,
+    "category": "S41"
+  },
+  {
+    "name": "Chap Corporation",
+    "city": "Hutchinson",
+    "state": "MN",
+    "avis": "moyen",
+    "score": 39,
+    "category": "S80Z"
+  },
+  {
+    "name": "Beau Chant",
+    "city": "Faribault",
+    "state": "MN",
+    "avis": "bon",
+    "score": 72,
+    "category": "A6B"
+  },
+  {
+    "name": "Chai Acs",
+    "city": "Sterling Hts",
+    "state": "MI",
+    "avis": "bon",
+    "score": 59,
+    "category": "A23"
+  }
+]

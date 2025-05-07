@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Personnages - Test</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        #result {
+            margin-top: 20px;
+        }
+        .error-message {
+            background-color: #fff0f0;
+            color: #c00;
+            padding: 10px;
+            border-left: 4px solid #c00;
+            margin-top: 20px;
+        }
+        .success-message {
+            background-color: #f0fff0;
+            color: #0c0;
+            padding: 10px;
+            border-left: 4px solid #0c0;
+            margin-top: 20px;
+        }
+        .personnage-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test de l'API Personnages</h1>
+        
+        <div class="form-group">
+            <label for="token">Token d'authentification:</label>
+            <input type="text" id="token" value="mon_super_token_secret" placeholder="Entrez votre token">
+        </div>
+        
+        <!-- Bonus: Champ pour filtrer par prénom -->
+        <div class="form-group">
+            <label for="prenom">Filtrer par prénom (optionnel):</label>
+            <input type="text" id="prenom" placeholder="Entrez un prénom">
+        </div>
+        
+        <button id="fetchBtn">Récupérer les personnages</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Attendre que le DOM soit chargé
+        document.addEventListener('DOMContentLoaded', function() {
+            // Référence au bouton et à la zone de résultat
+            const fetchBtn = document.getElementById('fetchBtn');
+            const resultDiv = document.getElementById('result');
+            
+            // Ajouter un écouteur d'événement au bouton
+            fetchBtn.addEventListener('click', fetchPersonnages);
+            
+            // Fonction pour récupérer les personnages
+            function fetchPersonnages() {
+                // Récupérer le token depuis le champ
+                const token = document.getElementById('token').value;
+                
+                // Récupérer la valeur du prénom (Bonus)
+                const prenom = document.getElementById('prenom').value;
+                
+                // Construire l'URL en fonction du prénom
+                let apiUrl = 'http://localhost:8000/personnages';
+                if (prenom.trim() !== '') {
+                    apiUrl += `?prenom=${encodeURIComponent(prenom)}`;
+                }
+                
+                // Options pour la requête fetch
+                const options = {
+                    method: 'GET',
+                    headers: {
+                        'token': token  // Le nom du header doit correspondre à celui du backend
+                    }
+                };
+                
+                // Afficher un message de chargement
+                resultDiv.innerHTML = '<p>Chargement en cours...</p>';
+                
+                // Effectuer la requête
+                fetch(apiUrl, options)
+                    .then(response => {
+                        // Vérifier le statut de la réponse
+                        if (response.ok) {  // équivalent à response.status >= 200 && response.status < 300
+                            return response.json();
+                        } else {
+                            // Gérer les différentes erreurs
+                            if (response.status === 401) {
+                                throw new Error('Authentification refusée. Vérifiez votre token.');
+                            } else {
+                                throw new Error(`Erreur ${response.status}: ${response.statusText}`);
+                            }
+                        }
+                    })
+                    .then(data => {
+                        // Traiter les données reçues
+                        console.log('Données reçues:', data);
+                        
+                        // Vérifier si des données ont été reçues
+                        if (data && data.length > 0) {
+                            // Créer un message de succès
+                            const successMessage = document.createElement('div');
+                            successMessage.className = 'success-message';
+                            successMessage.textContent = `${data.length} personnage(s) trouvé(s).`;
+                            
+                            // Créer une liste pour afficher les personnages
+                            const list = document.createElement('ul');
+                            list.style.listStyleType = 'none';
+                            list.style.padding = '0';
+                            
+                            // Parcourir les données et créer un élément de liste pour chaque personnage
+                            data.forEach(personnage => {
+                                const item = document.createElement('li');
+                                item.className = 'personnage-item';
+                                
+                                // Construire le contenu HTML pour chaque personnage
+                                item.innerHTML = `
+                                    <h3>${personnage.nom}</h3>
+                                    <p><strong>Profession:</strong> ${personnage.profession}</p>
+                                    <p><strong>Âge:</strong> ${personnage.age} ans</p>
+                                    <p><strong>Pouvoir:</strong> ${personnage.pouvoir || 'Aucun'}</p>
+                                `;
+                                
+                                // Ajouter l'élément à la liste
+                                list.appendChild(item);
+                            });
+                            
+                            // Vider la zone de résultat et ajouter les nouveaux éléments
+                            resultDiv.innerHTML = '';
+                            resultDiv.appendChild(successMessage);
+                            resultDiv.appendChild(list);
+                        } else {
+                            // Aucun personnage trouvé
+                            resultDiv.innerHTML = '<p>Aucun personnage trouvé.</p>';
+                        }
+                    })
+                    .catch(error => {
+                        // Gérer les erreurs
+                        console.error('Erreur:', error);
+                        
+                        const errorMessage = document.createElement('div');
+                        errorMessage.className = 'error-message';
+                        errorMessage.textContent = error.message;
+                        
+                        resultDiv.innerHTML = '';
+                        resultDiv.appendChild(errorMessage);
+                    });
+            }
+        });
+    </script>
+</body>
+</html>
