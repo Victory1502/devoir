@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nom": "Aragorn",
+        "profession": "Rôdeur du Nord",
+        "age": 87,
+        "pouvoir": "Guérison"
+    },
+    {
+        "id": 2,
+        "nom": "Hermione Granger",
+        "profession": "Sorcière",
+        "age": 17,
+        "pouvoir": "Intelligence exceptionnelle"
+    },
+    {
+        "id": 3,
+        "nom": "Tony Stark",
+        "profession": "Ingénieur",
+        "age": 45,
+        "pouvoir": "Génie en technologie"
+    },
+    {
+        "id": 4,
+        "nom": "Katniss Everdeen",
+        "profession": "Chasseuse",
+        "age": 16,
+        "pouvoir": "Tir à l'arc"
+    }
+]

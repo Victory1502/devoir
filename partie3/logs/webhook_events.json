@@ -1,0 +1,101 @@
+[
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Naruto",
+      "score": 85,
+      "niveau": "expert"
+    },
+    "timestamp": "2025-05-07T15:08:52.778716"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Sasuke",
+      "score": 87,
+      "niveau": "expert"
+    },
+    "timestamp": "2025-05-07T15:08:55.805867"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Sakura",
+      "score": 78,
+      "niveau": "expert"
+    },
+    "timestamp": "2025-05-07T15:08:58.857923"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Kakashi",
+      "score": 95,
+      "niveau": "légendaire"
+    },
+    "timestamp": "2025-05-07T15:09:01.910680"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Hinata",
+      "score": 72,
+      "niveau": "intermédiaire"
+    },
+    "timestamp": "2025-05-07T15:09:04.945786"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Gaara",
+      "score": 89,
+      "niveau": "expert"
+    },
+    "timestamp": "2025-05-07T15:09:07.994858"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Rock Lee",
+      "score": 68,
+      "niveau": "intermédiaire"
+    },
+    "timestamp": "2025-05-07T15:09:11.032963"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Itachi",
+      "score": 98,
+      "niveau": "légendaire"
+    },
+    "timestamp": "2025-05-07T15:09:14.079783"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Jiraiya",
+      "score": 91,
+      "niveau": "légendaire"
+    },
+    "timestamp": "2025-05-07T15:09:17.116869"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Tsunade",
+      "score": 93,
+      "niveau": "légendaire"
+    },
+    "timestamp": "2025-05-07T15:09:20.137894"
+  },
+  {
+    "type": "personnage_event",
+    "data": {
+      "nom": "Sasuke",
+      "score": 90,
+      "niveau": "légendaire"
+    },
+    "timestamp": "2025-05-07T15:13:57.923993"
+  }
+]

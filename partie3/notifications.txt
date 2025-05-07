@@ -1,0 +1,30 @@
+2025-05-07T15:24:30.959868 - Nouveau personnage: Naruto - Score: 85 - Niveau: expert
+2025-05-07T15:24:34.005011 - Nouveau personnage: Sasuke - Score: 87 - Niveau: expert
+2025-05-07T15:24:37.031924 - Nouveau personnage: Sakura - Score: 78 - Niveau: expert
+2025-05-07T15:24:40.088065 - Nouveau personnage: Kakashi - Score: 95 - Niveau: légendaire
+2025-05-07T15:24:43.127955 - Nouveau personnage: Hinata - Score: 72 - Niveau: intermédiaire
+2025-05-07T15:24:46.182031 - Nouveau personnage: Gaara - Score: 89 - Niveau: expert
+2025-05-07T15:24:49.209819 - Nouveau personnage: Rock Lee - Score: 68 - Niveau: intermédiaire
+2025-05-07T15:24:52.240156 - Nouveau personnage: Itachi - Score: 98 - Niveau: légendaire
+2025-05-07T15:24:55.299370 - Nouveau personnage: Jiraiya - Score: 91 - Niveau: légendaire
+2025-05-07T15:24:58.346313 - Nouveau personnage: Tsunade - Score: 93 - Niveau: légendaire
+2025-05-07T15:30:16.990202 - Nouveau personnage: Naruto - Score: 85 - Niveau: expert
+2025-05-07T15:30:20.011905 - Nouveau personnage: Sasuke - Score: 87 - Niveau: expert
+2025-05-07T15:30:23.045171 - Nouveau personnage: Sakura - Score: 78 - Niveau: expert
+2025-05-07T15:30:26.106612 - Nouveau personnage: Kakashi - Score: 95 - Niveau: légendaire
+2025-05-07T15:30:29.137030 - Nouveau personnage: Hinata - Score: 72 - Niveau: intermédiaire
+2025-05-07T15:30:32.193537 - Nouveau personnage: Gaara - Score: 89 - Niveau: expert
+2025-05-07T15:30:35.230872 - Nouveau personnage: Rock Lee - Score: 68 - Niveau: intermédiaire
+2025-05-07T15:30:38.268283 - Nouveau personnage: Itachi - Score: 98 - Niveau: légendaire
+2025-05-07T15:30:41.320015 - Nouveau personnage: Jiraiya - Score: 91 - Niveau: légendaire
+2025-05-07T15:30:44.368882 - Nouveau personnage: Tsunade - Score: 93 - Niveau: légendaire
+2025-05-07T15:32:03.509152 - Nouveau personnage: Naruto - Score: 85 - Niveau: expert
+2025-05-07T15:32:06.539959 - Nouveau personnage: Sasuke - Score: 87 - Niveau: expert
+2025-05-07T15:32:09.591960 - Nouveau personnage: Sakura - Score: 78 - Niveau: expert
+2025-05-07T15:32:12.656674 - Nouveau personnage: Kakashi - Score: 95 - Niveau: légendaire
+2025-05-07T15:32:15.704838 - Nouveau personnage: Hinata - Score: 72 - Niveau: intermédiaire
+2025-05-07T15:32:18.756135 - Nouveau personnage: Gaara - Score: 89 - Niveau: expert
+2025-05-07T15:32:21.805066 - Nouveau personnage: Rock Lee - Score: 68 - Niveau: intermédiaire
+2025-05-07T15:32:24.840174 - Nouveau personnage: Itachi - Score: 98 - Niveau: légendaire
+2025-05-07T15:32:27.891293 - Nouveau personnage: Jiraiya - Score: 91 - Niveau: légendaire
+2025-05-07T15:32:30.935004 - Nouveau personnage: Tsunade - Score: 93 - Niveau: légendaire
